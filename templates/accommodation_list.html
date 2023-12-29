@@ -11,7 +11,8 @@
     <br />
     {{ accommodation.price }}
     <br />
-    {{ accommodation.accommodation_image }}
+    <br />
+    <img src="{{ accommodation.accommodation_image.url }}" alt="" />
   </li>
   <!-- Add links/buttons to view details or book accommodation -->
   {% empty %}

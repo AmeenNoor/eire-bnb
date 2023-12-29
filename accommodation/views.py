@@ -8,5 +8,5 @@ class AccommodationList(ListView):
     View to display all list of all accommodations with their attributes
     """
     model = Accommodation
-    queryset = Accommodation.objects.all()
+    context_object_name = 'accommodations'
     template_name = 'accommodation_list.html'
