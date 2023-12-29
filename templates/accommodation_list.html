@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Accommodations List</h1>
+<ul>
+  {% for accommodation in accommodations %}
+  <li>
+    {{ accommodation.name }}
+    <br />
+    {{ accommodation.address }}
+    <br />
+    {{ accommodation.city }}
+    <br />
+    {{ accommodation.price }}
+    <br />
+    {{ accommodation.accommodation_image }}
+  </li>
+  <!-- Add links/buttons to view details or book accommodation -->
+  {% empty %}
+  <li>No accommodations available.</li>
+  {% endfor %}
+</ul>
+{% endblock %}
