@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Accommodation Details</h1>
+<ul>
+  <li>
+    {{ accommodation.name }}
+    <br />
+    {{ accommodation.address }}
+    <br />
+    {{ accommodation.city }}
+    <br />
+    {{ accommodation.price }}
+    <br />
+    <br />
+    <img src="{{ accommodation.accommodation_image.url }}" alt="" />
+  </li>
+</ul>
+{% endblock %}

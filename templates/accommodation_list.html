@@ -5,14 +5,11 @@
   <li>
     {{ accommodation.name }}
     <br />
-    {{ accommodation.address }}
-    <br />
-    {{ accommodation.city }}
-    <br />
     {{ accommodation.price }}
     <br />
-    <br />
     <img src="{{ accommodation.accommodation_image.url }}" alt="" />
+    <br />
+    <a href="{% url 'accommodation_detail' pk=accommodation.id %}">More Info</a>
   </li>
   <!-- Add links/buttons to view details or book accommodation -->
   {% empty %}
