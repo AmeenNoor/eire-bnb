@@ -1,7 +1,13 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import TemplateView, ListView, DetailView
 from .models import Accommodation
 
+
+class Home(TemplateView):
+    """
+    View to display Home page
+    """
+    template_name = 'home.html'
 
 class AccommodationList(ListView):
     """

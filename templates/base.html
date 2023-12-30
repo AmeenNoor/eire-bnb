@@ -7,6 +7,18 @@
     <title>Document</title>
   </head>
   <body>
-    {% block content %} {% endblock %}
+    <header>
+      <u>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'accommodation_list' %}">Accommodations</a></li>
+      </u>
+      {% if user.is_authenticated %} {{ user }}
+      <a href="{% url 'account_logout' %}">Logout</a>
+      {% else %}
+      <a href="{% url 'account_login' %}">Login</a>
+      <a href="{% url 'account_signup' %}">Sign Up</a>
+      {% endif %}
+    </header>
+    <main>{% block content %} {% endblock %}</main>
   </body>
 </html>
