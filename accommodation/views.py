@@ -31,6 +31,10 @@ class AccommodationDetail(DetailView):
 class BookAccommodationView(CreateView):
     model = Booking
     fields = ['first_name', 'last_name',
-              'phone_number', 'email', 'number_of_guests', 'check_in_date', 'check_out_date']
+              'phone_number', 'email', 'number_of_guests', 'check_in_date', 'check_out_date', 'accommodation']
     template_name = 'book_accommodation.html'
     success_url = reverse_lazy('home')
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)

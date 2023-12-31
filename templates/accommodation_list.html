@@ -9,7 +9,7 @@
     <br />
     <img src="{{ accommodation.accommodation_image.url }}" alt="" />
     <br />
-    <a href="{% url 'accommodation_detail' pk=accommodation.id %}">Reserve</a>
+    <a href="{% url 'book_accommodation' %}">Book</a>
     <br />
     <a href="{% url 'accommodation_detail' pk=accommodation.id %}">More Info</a>
   </li>
