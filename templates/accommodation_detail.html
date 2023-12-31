@@ -12,6 +12,9 @@
     <br />
     <br />
     <img src="{{ accommodation.accommodation_image.url }}" alt="" />
+    <br />
+    <br />
+    <a href="{% url 'accommodation_detail' pk=accommodation.id %}">Reserve</a>
   </li>
 </ul>
 {% endblock %}

@@ -28,3 +28,19 @@ class Accommodation(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Booking(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    phone_number = models.CharField(max_length=50)
+    email = models.EmailField()
+    number_of_guests = models.IntegerField(default=1)
+    check_in_date = models.DateField()
+    check_out_date = models.DateField()
+    booking_date = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    accommodation = models.ForeignKey(Accommodation, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.last_name
