@@ -43,4 +43,4 @@ class Booking(models.Model):
     accommodation = models.ForeignKey(Accommodation, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.last_name
+        return f"Booking for {self.accommodation.name} by {self.user.username}"
