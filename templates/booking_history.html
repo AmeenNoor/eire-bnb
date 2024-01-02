@@ -1,11 +1,13 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <h1>Booking History</h1>
 <ul>
-    {% for booking in bookings %}
-    <li>Booking ID: {{ booking.id }} </li>
-    {% empty %}
-    <li>No bookings found.</li>
-    {% endfor %}
+  {% for booking in bookings %}
+  <li>
+    Booking Details: {{ booking }} -
+    <a href="{% url 'update_booking' pk=booking.id  %}">Update</a>
+  </li>
+  {% empty %}
+  <li>No bookings found.</li>
+  {% endfor %}
 </ul>
 {% endblock %}

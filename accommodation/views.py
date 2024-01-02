@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView, ListView, DetailView, CreateView
+from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView
 from .models import Accommodation, Booking
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -49,6 +49,17 @@ class BookingHistoryView(LoginRequiredMixin, ListView):
     model = Booking
     template_name = 'booking_history.html'
     context_object_name = 'bookings'
+
+    def get_queryset(self):
+        return Booking.objects.filter(user=self.request.user)
+
+
+class UpdateBookingView(LoginRequiredMixin, UpdateView):
+    model = Booking
+    fields = ['first_name', 'last_name',
+              'phone_number', 'email', 'number_of_guests', 'check_in_date', 'check_out_date', 'accommodation']
+    template_name = 'update_booking.html'
+    success_url = reverse_lazy('booking_history')
 
     def get_queryset(self):
         return Booking.objects.filter(user=self.request.user)
