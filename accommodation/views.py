@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, DetailView, CreateView
 from .models import Accommodation, Booking
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class Home(TemplateView):
@@ -28,7 +29,7 @@ class AccommodationDetail(DetailView):
     template_name = 'accommodation_detail.html'
 
 
-class BookAccommodationView(CreateView):
+class BookAccommodationView(LoginRequiredMixin, CreateView):
     model = Booking
     fields = ['first_name', 'last_name',
               'phone_number', 'email', 'number_of_guests', 'check_in_date', 'check_out_date']
