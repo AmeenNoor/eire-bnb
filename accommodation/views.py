@@ -31,10 +31,15 @@ class AccommodationDetail(DetailView):
 class BookAccommodationView(CreateView):
     model = Booking
     fields = ['first_name', 'last_name',
-              'phone_number', 'email', 'number_of_guests', 'check_in_date', 'check_out_date', 'accommodation']
+              'phone_number', 'email', 'number_of_guests', 'check_in_date', 'check_out_date']
     template_name = 'book_accommodation.html'
     success_url = reverse_lazy('home')
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        # Ensure the correct kwarg name is used here
+        accommodation_id = self.kwargs.get('pk')
+        accommodation = Accommodation.objects.get(pk=accommodation_id)
+        form.instance.accommodation = accommodation
+        form.save()  # Save the form to commit the booking
         return super().form_valid(form)

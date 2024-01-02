@@ -14,7 +14,7 @@
     <img src="{{ accommodation.accommodation_image.url }}" alt="" />
     <br />
     <br />
-    <a href="{% url 'book_accommodation' %}">Book</a>
+    <a href="{% url 'book_accommodation' pk=accommodation.id %}">Book</a>
   </li>
 </ul>
 {% endblock %}

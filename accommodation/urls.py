@@ -6,6 +6,6 @@ urlpatterns = [
     path('accommodation/', AccommodationList.as_view(), name='accommodation_list'),
     path('accommodation/<int:pk>', AccommodationDetail.as_view(),
          name='accommodation_detail'),
-    path('booking/', BookAccommodationView.as_view(),
+    path('accommodation/<int:pk>/booking', BookAccommodationView.as_view(),
          name='book_accommodation'),
 ]
