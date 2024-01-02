@@ -38,9 +38,17 @@ class BookAccommodationView(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-        # Ensure the correct kwarg name is used here
         accommodation_id = self.kwargs.get('pk')
         accommodation = Accommodation.objects.get(pk=accommodation_id)
         form.instance.accommodation = accommodation
-        form.save()  # Save the form to commit the booking
+        form.save()
         return super().form_valid(form)
+
+
+class BookingHistoryView(LoginRequiredMixin, ListView):
+    model = Booking
+    template_name = 'booking_history.html'
+    context_object_name = 'bookings'
+
+    def get_queryset(self):
+        return Booking.objects.filter(user=self.request.user)
