@@ -4,7 +4,8 @@
   {% for booking in bookings %}
   <li>
     Booking Details: {{ booking }} -
-    <a href="{% url 'update_booking' pk=booking.id  %}">Update</a>
+    <a href="{% url 'update_booking' pk=booking.id  %}">Update</a> -
+    <a href="{% url 'cancel_booking' pk=booking.id %}">Cancel</a>
   </li>
   {% empty %}
   <li>No bookings found.</li>
