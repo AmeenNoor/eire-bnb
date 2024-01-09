@@ -4,21 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="EireBnb" />
+    <meta name="keywords" content="EireBnb, BnB, Booking, Reservation" />
+
+    <title>EireBnb</title>
   </head>
   <body>
     <header>
-      <u>
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'accommodation_list' %}">Accommodations</a></li>
-      </u>
-      {% if user.is_authenticated %} {{ user }}
-      <a href="{% url 'account_logout' %}">Logout</a> - <a href="{% url 'booking_history' %}">My Booking</a>
-      {% else %}
-      <a href="{% url 'account_login' %}">Login</a>
-      <a href="{% url 'account_signup' %}">Sign Up</a>
-      {% endif %}
+      <!-- LOGO -->
+      <!-- NAVIGATION BAR -->
     </header>
-    <main>{% block content %} {% endblock %}</main>
+    <footer>
+      <!-- EMAIL & ADDRESS SECTION -->
+      <!-- SOCIAL MEDIA SECTION -->
+    </footer>
   </body>
 </html>
