@@ -39,3 +39,16 @@ nav a {
     border: 2px solid #73AD21;
     padding: 20px;
 }
+
+footer {
+    justify-content: space-between;
+    background-color: #D3D3D3;
+}
+
+footer .left-footer span {
+    margin-left: 10px;
+}
+
+footer .right-footer a {
+    margin-right: 10px;
+}
