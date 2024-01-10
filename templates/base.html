@@ -10,13 +10,43 @@
     <title>EireBnb</title>
   </head>
   <body>
+    <!-- HEADER SECTION -->
     <header>
-      <!-- LOGO -->
-      <!-- NAVIGATION BAR -->
+      <div>
+        <a href="#">
+          <h1>EireBnB</h1>
+        </a>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Accommodations</a>
+        <a href="#">My Account</a>
+      </nav>
     </header>
+
+    <!-- FOOTER SECTION -->
     <footer>
       <!-- EMAIL & ADDRESS SECTION -->
+      <div>
+        <i class="fas fa-envelope fa-2xl"></i>
+        <span>admin@eirebnb.com</span>
+        <i class="fas fa-map-marker-alt fa-2xl"></i>
+        <span>123 Main St, Dublin, Ireland</span>
+      </div>
       <!-- SOCIAL MEDIA SECTION -->
+      {% block content %} {% endblock %}
+      <div>
+        <a href="#"><i class="fab fa-facebook fa-2xl"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2xl"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2xl"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2xl"></i></a>
+      </div>
     </footer>
+
+    <!-- FONT AWESOME SCRIPT -->
+    <script
+      src="https://kit.fontawesome.com/c252b580d2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
