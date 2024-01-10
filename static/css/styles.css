@@ -1,0 +1,31 @@
+/* Remove default margins,
+padding and borders */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+header,
+footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    /* https: //www.w3schools.com/css/css3_flexbox.asp */
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #73AD21;
+}
+
+header {
+    justify-content: space-between;
+    /* https: //www.w3schools.com/cssref/css3_pr_justify-content.php */
+    background-color: #D3D3D3;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
