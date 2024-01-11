@@ -1,20 +1,33 @@
 {% extends 'base.html' %} {% block content %}
-<h1>Accommodation Details</h1>
-<ul>
-  <li>
-    {{ accommodation.name }}
-    <br />
-    {{ accommodation.address }}
-    <br />
-    {{ accommodation.city }}
-    <br />
-    {{ accommodation.price }}
-    <br />
-    <br />
-    <img src="{{ accommodation.accommodation_image.url }}" alt="" />
-    <br />
-    <br />
-    <a href="{% url 'book_accommodation' pk=accommodation.id %}">Book</a>
-  </li>
-</ul>
+
+<div class="accommodation-detail">
+  <div class="text-center">
+    <img
+      src="{{ accommodation.accommodation_image.url }}"
+      class="img-fluid detail-image"
+      alt="{{ accommodation.name }}"
+    />
+  </div>
+
+  <!-- Accommodation Details -->
+  <div class="details">
+    <h2>{{ accommodation.name }}</h2>
+    <p><strong>Price:</strong> € {{ accommodation.price }}</p>
+    <p><strong>Capacity:</strong> {{ accommodation.capacity }}</p>
+    <p>
+      <strong>Address:</strong> {{ accommodation.address }}, {{
+      accommodation.city }}, {{ accommodation.country }}
+    </p>
+    <p><strong>Description:</strong> {{ accommodation.description }}</p>
+  </div>
+  <!-- Book Button -->
+  <div class="text-center">
+    <a
+      href="{% url 'book_accommodation' pk=accommodation.id %}"
+      class="btn btn-success"
+      >Book Now</a
+    >
+  </div>
+</div>
+
 {% endblock %}
