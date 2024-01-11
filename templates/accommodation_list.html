@@ -1,20 +1,36 @@
 {% extends 'base.html' %} {% block content %}
-<h1>Accommodations List</h1>
-<ul>
+<!-- https://getbootstrap.com/docs/5.3/components/card/ -->
+<div class="row row-cols-1 row-cols-md-3 g-4">
   {% for accommodation in accommodations %}
-  <li>
-    {{ accommodation.name }}
-    <br />
-    {{ accommodation.price }}
-    <br />
-    <img src="{{ accommodation.accommodation_image.url }}" alt="" />
-    <br />
-    <a href="{% url 'book_accommodation' pk=accommodation.id %}">Book</a>
-    <br />
-    <a href="{% url 'accommodation_detail' pk=accommodation.id %}">More Info</a>
-  </li>
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="{{ accommodation.accommodation_image.url }}"
+        class="card-img-top"
+        alt="{{ accommodation.name }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ accommodation.name }}</h5>
+        <p class="card-text">
+          {{ accommodation.price }} - {{ accommodation.city }}
+        </p>
+        <div class="d-flex justify-content-between">
+          <a
+            href="{% url 'accommodation_detail' pk=accommodation.id %}"
+            class="btn btn-primary"
+            >More Details</a
+          >
+          <a
+            href="{% url 'book_accommodation' pk=accommodation.id %}"
+            class="btn btn-success"
+            >Book</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
   {% empty %}
-  <li>No accommodations available.</li>
+  <h1>No accommodations available.</h1>
   {% endfor %}
-</ul>
+</div>
 {% endblock %}
