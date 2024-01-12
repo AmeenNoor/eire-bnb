@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&family=Rye&display=swap');
+
 /* Remove default margins,
 padding and borders */
 
-body {
+* {
     margin: 0;
     padding: 0;
     border: none;
+}
+
+body {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.logo-container {
+    font-family: 'Rye', cursive;
+    text-decoration: none;
+    color: #141850;
+}
+
+.logo-container span {
+    color: #ed7966;
 }
 
 header,
