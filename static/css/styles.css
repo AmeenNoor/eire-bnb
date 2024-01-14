@@ -11,12 +11,14 @@ padding and borders */
 
 body {
     font-family: 'Nanum Myeongjo', serif;
+    color: #141850;
 }
 
 .logo-container {
     font-family: 'Rye', cursive;
     text-decoration: none;
     color: #141850;
+
 }
 
 .logo-container span {
@@ -27,31 +29,31 @@ header,
 footer {
     width: 90%;
     margin: 0 auto;
-    display: flex;
     /* https: //www.w3schools.com/css/css3_flexbox.asp */
+    display: flex;
     align-items: center;
     padding: 20px;
-    border: 2px solid #73AD21;
+    border: 2px solid #141850;
+    background-color: #FAE5DF;
 }
 
 header {
     justify-content: space-between;
     /* https: //www.w3schools.com/cssref/css3_pr_justify-content.php */
-    background-color: #D3D3D3;
 }
 
 nav a {
     margin-right: 20px;
     text-decoration: none;
-    color: #333;
+    color: #141850;
 }
 
 .content {
     width: 90%;
     margin: 0 auto;
     height: 90%;
-    border: 2px solid #73AD21;
     padding: 20px;
+    border: 2px solid #141850;
 }
 
 .card-img-top {
@@ -61,7 +63,6 @@ nav a {
 
 footer {
     justify-content: space-between;
-    background-color: #D3D3D3;
 }
 
 footer .left-footer span {
@@ -70,11 +71,12 @@ footer .left-footer span {
 
 footer .right-footer a {
     margin-right: 10px;
+    color: #141850;
 }
 
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #ed7966;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -112,7 +114,7 @@ footer .right-footer a {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #141850;
 }
 
 /*----------------------------------------------------------------------------*/
