@@ -71,6 +71,10 @@ footer .left-footer span {
 
 footer .right-footer a {
     margin-right: 10px;
+}
+
+footer,
+footer a {
     color: #141850;
 }
 
