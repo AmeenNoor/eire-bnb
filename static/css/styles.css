@@ -140,3 +140,11 @@ footer a {
 .details {
     margin: 60px 0;
 }
+
+.booking-history {
+    margin: 30px;
+}
+
+.booking-history h1 {
+    text-align: center;
+}
