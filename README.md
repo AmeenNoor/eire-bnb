@@ -40,7 +40,7 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
     - [Data Flow](#data-flow)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
-    - [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+    - [Frameworks, Tools, Libraries and Programs Used](#frameworks-tools-libraries-and-programs-used)
   - [Testing](#testing)
     - [Validation Testing](#validation-testing)
     - [Manual Testing](#manual-testing)
@@ -243,9 +243,11 @@ The main program consists of different functions.
 ## Technologies Used
 ### Languages Used
 
-1. Python
+1. HTML
+2. CSS
+3. Python
    
-### Frameworks, Libraries and Programs Used
+### Frameworks, Tools, Libraries and Programs Used
 
 1. [Heroku](https://www.heroku.com/):
    Heroku was employed for project deployment.
@@ -259,14 +261,35 @@ The main program consists of different functions.
 4. [CI's pep8 tool](https://pep8ci.herokuapp.com/):
    CI's pep8 tool was used to ensure the code is valid and follows proper indentation
 
-5. [pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/):
-   Pyfiglet was used to stylized ASCII art text for titles and banners.
-
-6. [simple-colors](https://pypi.org/project/simple-colors/):
-   Simple-colors was used to colored text.
-
-7. [draw.io](https://app.diagrams.net/):
+5. [draw.io](https://app.diagrams.net/):
    draw.io was used to craft the flowchart
+
+6. [Font Awesome](https://fontawesome.com/):
+   Font Awesome was used to incorporate social media and contact information icons, including icons for Facebook, Twitter, Youtube, Instagram, email and address.
+   
+7. [Google Fonts](https://fonts.google.com/):
+   Google fonts were used to import 'nanum myeongjo' & 'Rye' fonts into the style.css file which are used on all pages throughout the project.
+
+8. [HTML Validator](https://validator.w3.org/):
+   The HTML code of the website was tested using the HTML Validator that provided by The World Wide Web Consortium (W3C).
+
+9. [Jigsaw](https://jigsaw.w3.org/css-validator/):
+   The CSS code of the website was tested using Jigsaw that provided by The World Wide Web Consortium (W3C).
+
+10. [Balsamiq](https://balsamiq.com/):
+   Balsamiq was used to create the mockup design for the website.
+
+11. [Django](https://www.djangoproject.com/):
+    Django was used to develop the backend, handling dynamic pages, URL routing, and database management.
+    
+12. [Cloudinary](https://cloudinary.com/):
+    Cloudinary used to host all images.
+    
+13. [ElephantSQL](https://www.elephantsql.com/):
+    ElephantSQL Was used to host the PostgreSQL database.
+
+
+
 
 ## Testing
 ### Validation Testing
