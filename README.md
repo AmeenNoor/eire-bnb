@@ -58,15 +58,23 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
 ## User Experience (UX)
 ### User storis
 
-1. As a player, I want to find a clear and understandable main menu with options like "How to Play," "Play Game," "Game Statistics," and "Exit" for easy navigation.
+1. As a Site User I can browse through a list of accommodations so that I can explore various options
 
-2. As a player, I want to access straightforward instructions when choosing "How to Play" from the main menu.
+2. As a Site User I can view detailed information about each accommodation, including descriptions, images, and amenities
 
-3. As a player, I want access "Play Game" menu where I can select whether to guess a country, city, or landmark name, and return back to the main menu.
+3. As a Site User I can book an available accommodation for specified dates
 
-4. As a player, I want start gameplay, with clear feedback on guessed letters and an enjoyable way to reveal the hidden name.
+4. As a Site User I can view my booking history so that I can track past and upcoming reservations
 
-5. As a player, I want access "Game Statistics" section that displays the number of games played, games won, and games lost, allowing me to track my progress.
+5. As a Site User/ Admin I can cancel booking so that I can adjust plans
+   
+6. As a Site User I can update or modify existing booking details so that I can change dates or accommodations
+
+7. As a Site User I can register for an account so that I can access booking features
+
+8. As a Site User I can log in and out of my account so that I can ensure secure access
+   
+9. As a Site Admin I can view, add, edit, or remove accommodations so that I can manage and update accommodations
 
 
 ### Design
