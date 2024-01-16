@@ -149,3 +149,8 @@ footer a {
 .booking-history h1 {
     text-align: center;
 }
+
+.custom-card {
+    background-color: #F5CAC2 !important;
+
+}
