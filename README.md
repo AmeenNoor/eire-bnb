@@ -46,8 +46,8 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
     - [Manual Testing](#manual-testing)
     - [Fixing Bugs](#fixing-bugs)
   - [Deployment](#deployment)
+    - [Local deployment](#local-deployment)
     - [Heroku](#heroku)
-    - [Gitpod](#gitpod)
   - [Credits](#credits)
     - [Code](#code)
     - [Content](#content)
@@ -340,10 +340,40 @@ View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XA
   ![Run Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/run-fixed.png)
 
 ## Deployment
+### Local deployment
+To deploy the site using Visual Studio Code, follow these steps:
+
+1. **Clone the Repository:**
+    * Open VS Code.
+    * Use the command palette and run "Git: Clone".
+    * Enter the GitHub repository URL and choose a local directory.
+    * Open the cloned project in VS Code.
+
+2. **Install Dependencies:**
+    * Navigate to the project directory in the terminal & run the following:
+    **pip3 install -r requirements.txt**
+
+3. **Set Environment Variables:**
+    * Create a .env file in the project root.
+    * Copy the contents of env.py into the .env file.
+
+4. **Apply Migrations:**
+    * Run the following commands to apply migrations:
+    **python3 manage.py migrate**
+
+5. **Create Superuser :**
+    * Create an admin superuser for accessing the Django admin panel:
+    **python3 manage.py createsuperuser**
+
+6. **Run the Server:**
+    * Start the Django server:
+    **python3 manage.py runserver**
+
 ### Heroku
+
 To deploy the site on Heroku, follow these steps:
 
-1. Begin by forking the repository: https://github.com/AmeenNoor/worldscape-adventure.
+1. Begin by forking the repository: <https://github.com/AmeenNoor/eire-bnb.git>.
 
 2. Log in to Heroku and click "New." Select "Create new app."(see screenshots below):
 
@@ -353,7 +383,7 @@ To deploy the site on Heroku, follow these steps:
 
 ![Deployment_2](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image2.png)
 
-4. In the app settings, navigate to the "Config Vars" section. Add a key-value pair where the key is "PORT" and the value is "8000." (see screenshots below):
+4. In the app settings, navigate to the "Config Vars" section. Set the environment variables directly on Heroku (see screenshots below):
 
 ![Deployment_3](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image3.png)
 
@@ -382,17 +412,6 @@ To deploy the site on Heroku, follow these steps:
 ![Deployment_12](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image12.png)
 
 ![Deployment_13](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image13.png)
-
-### Gitpod
-To work with the project using Gitpod, follow these steps:
-
-1. Fork the repository to create your own copy for personal use.
-
-2. Install the Gitpod extension from the Visual Studio Code marketplace or your preferred extension source.
-
-3. Inside the Gitpod workspace, install the project's requirements by running the command **pip3 install -r requirements.txt** in the terminal.
-
-4. Start the program by running **python3 run.py** in the terminal.
 
 ## Credits
 ### Code
