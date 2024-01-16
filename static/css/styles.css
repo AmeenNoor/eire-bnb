@@ -12,6 +12,8 @@ padding and borders */
 body {
     font-family: 'Nanum Myeongjo', serif;
     color: #141850;
+    background-color: #FAE5DF !important;
+
 }
 
 .logo-container {
@@ -33,13 +35,12 @@ footer {
     display: flex;
     align-items: center;
     padding: 20px;
-    border: 2px solid #141850;
-    background-color: #FAE5DF;
 }
 
 header {
     justify-content: space-between;
     /* https: //www.w3schools.com/cssref/css3_pr_justify-content.php */
+    margin-bottom: 15px;
 }
 
 nav a {
@@ -53,7 +54,6 @@ nav a {
     margin: 0 auto;
     height: 90%;
     padding: 20px;
-    border: 2px solid #141850;
 }
 
 .card-img-top {
@@ -63,6 +63,7 @@ nav a {
 
 footer {
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 footer .left-footer span {
