@@ -3,6 +3,8 @@ from django.views.generic import TemplateView, ListView, DetailView, CreateView,
 from .models import Accommodation, Booking
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django import forms
+
 
 
 class Home(TemplateView):
@@ -29,10 +31,20 @@ class AccommodationDetail(DetailView):
     template_name = 'accommodation_detail.html'
 
 
+class BookingForm(forms.ModelForm):
+    class Meta:
+        model = Booking
+        fields = ['first_name', 'last_name', 'phone_number', 'email',
+                  'number_of_guests', 'check_in_date', 'check_out_date']
+        widgets = {
+            'check_in_date': forms.DateInput(attrs={'type': 'date'}, format='%d/%m/%Y'),
+            'check_out_date': forms.DateInput(attrs={'type': 'date'}, format='%d/%m/%Y'),
+        }
+
+
 class BookAccommodationView(LoginRequiredMixin, CreateView):
     model = Booking
-    fields = ['first_name', 'last_name',
-              'phone_number', 'email', 'number_of_guests', 'check_in_date', 'check_out_date']
+    form_class = BookingForm
     template_name = 'book_accommodation.html'
     success_url = reverse_lazy('home')
 

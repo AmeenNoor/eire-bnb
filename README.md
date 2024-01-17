@@ -87,13 +87,13 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
 ### Wireframes
 - #### Desktop
 
-<img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/home-page.png" alt="Desktop 1" width="270px" height="270px"> <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/classes-page.png" alt="Desktop 2" width="270px" height="270px"> <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/contact-us-page.png" alt="Desktop 3" width="270px" height="270px">
+<img src="https://github.com/AmeenNoor/eire-bnb/blob/main/media/ux/wireframes/desktop-accommodations-page.png" alt="Desktop 1" width="270px" height="270px"> <img src="https://github.com/AmeenNoor/eire-bnb/blob/main/media/ux/wireframes/desktop-home-page.png" alt="Desktop 2" width="270px" height="270px"> 
 - #### Tablet
 
-  <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/tablet-page1.png" alt="Tablet 1" width="250"> &nbsp; <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/tablet-page2.png" alt="Tablet 2" width="250"> &nbsp; <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/tablet-page3.png" alt="Tablet 3" width="250">
+  <img src="https://github.com/AmeenNoor/eire-bnb/blob/main/media/ux/wireframes/tablet-home-page.png" alt="Tablet 1" width="250"> &nbsp; <img src="https://github.com/AmeenNoor/eire-bnb/blob/main/media/ux/wireframes/tablet-accommodations-page.png" alt="Tablet 2" width="250"> &nbsp; 
 - #### Mobile
 
-  <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/mobile-phone-page1.png" alt="Mobile 1" width="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/mobile-phone-page2.png" alt="Mobile 2" width="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/mobile-phone-page3.png" alt="Mobile 3" width="200">
+  <img src="https://github.com/AmeenNoor/eire-bnb/blob/main/media/ux/wireframes/mobile-home-page.png" alt="Mobile 1" width="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/AmeenNoor/eire-bnb/blob/main/media/ux/wireframes/mobile-accommodations-page.png" alt="Mobile 2" width="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Features
 ### Implemented Features
