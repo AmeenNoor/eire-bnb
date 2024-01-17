@@ -64,14 +64,27 @@ nav a {
 footer {
     justify-content: space-between;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
-footer .left-footer span {
+.left-footer {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap onto a new line if needed */
+}
+
+.email,
+.address {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    /* Adjust the margin as needed */
+}
+
+.email span,
+.address span {
     margin-left: 10px;
-}
-
-footer .right-footer a {
-    margin-right: 10px;
 }
 
 footer,
@@ -200,4 +213,50 @@ footer a {
     footer span {
         font-size: 12px;
     }
+}
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*------ Media queries For medium screen sizes from 768px wide and down ------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    header {
+
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .logo {
+        order: 1;
+        /* Display logo at the top */
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        order: 2;
+        /* Display navigation links in the middle */
+        margin-bottom: 10px;
+    }
+
+    .accommodation-detail {
+        width: 100%;
+    }
+
+    .left-footer {
+        flex-direction: column;
+    }
+
+    .left-footer,
+    .right-footer {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .left-footer {
+        order: 3;
+    }
+
 }
