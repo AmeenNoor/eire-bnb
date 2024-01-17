@@ -154,3 +154,50 @@ footer a {
     background-color: #F5CAC2 !important;
 
 }
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*------ Media queries For medium screen sizes from 950px wide and down ------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 950px) {
+    .content .card-body .btn {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 14px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .card-title {
+        font-size: 16px;
+
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    footer .fa-2xl {
+        font-size: 24px;
+    }
+
+    footer span {
+        font-size: 12px;
+    }
+}
