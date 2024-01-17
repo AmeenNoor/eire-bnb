@@ -4,6 +4,8 @@ from .models import Accommodation, Booking
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django import forms
+from django.utils import timezone
+from django.core.exceptions import ValidationError
 
 
 
@@ -40,6 +42,19 @@ class BookingForm(forms.ModelForm):
             'check_in_date': forms.DateInput(attrs={'type': 'date'}, format='%d/%m/%Y'),
             'check_out_date': forms.DateInput(attrs={'type': 'date'}, format='%d/%m/%Y'),
         }
+    
+    def clean(self):
+        cleaned_data = super().clean()
+        check_in_date = cleaned_data.get('check_in_date')
+        check_out_date = cleaned_data.get('check_out_date')
+
+        if check_in_date and check_in_date < timezone.now().date():
+            raise ValidationError('Check-in date must be in the future.')
+
+        if check_out_date and (check_out_date <= check_in_date or check_out_date < timezone.now().date()):
+            raise ValidationError(
+                'Ensure that the check-out date is later than the check-in date ')
+
 
 
 class BookAccommodationView(LoginRequiredMixin, CreateView):
@@ -48,13 +63,8 @@ class BookAccommodationView(LoginRequiredMixin, CreateView):
     template_name = 'book_accommodation.html'
     success_url = reverse_lazy('home')
 
-    def form_valid(self, form):
-        form.instance.user = self.request.user
-        accommodation_id = self.kwargs.get('pk')
-        accommodation = Accommodation.objects.get(pk=accommodation_id)
-        form.instance.accommodation = accommodation
-        form.save()
-        return super().form_valid(form)
+
+
 
 
 class BookingHistoryView(LoginRequiredMixin, ListView):
@@ -68,8 +78,7 @@ class BookingHistoryView(LoginRequiredMixin, ListView):
 
 class UpdateBookingView(LoginRequiredMixin, UpdateView):
     model = Booking
-    fields = ['first_name', 'last_name',
-              'phone_number', 'email', 'number_of_guests', 'check_in_date', 'check_out_date', 'accommodation']
+    form_class = BookingForm
     template_name = 'update_booking.html'
     success_url = reverse_lazy('booking_history')
 
