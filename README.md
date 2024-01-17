@@ -30,7 +30,7 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
     - [User storis](#user-storis)
     - [Design](#design)
       - [Flow Chart](#flow-chart)
-  - [How To Play](#how-to-play)
+    - [Wireframes](#wireframes)
   - [Features](#features)
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
@@ -84,46 +84,16 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
 ![Flow Chart](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/flowchart/flow-chart.png)
 
 
-## How To Play
+### Wireframes
+- #### Desktop
 
-1. **Main Menu**:
-    - When you start the game, you'll see the main menu with four options: "HOW TO PLAY," "PLAY GAME," "GAME STATISTICS," and "EXIT."
-    - Use the keyboard to select the option you want by entering the corresponding letter (e.g., 'A' for "HOW TO PLAY").
+<img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/home-page.png" alt="Desktop 1" width="270px" height="270px"> <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/classes-page.png" alt="Desktop 2" width="270px" height="270px"> <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/contact-us-page.png" alt="Desktop 3" width="270px" height="270px">
+- #### Tablet
 
-2. **How to Play**:
-    - If you're new to the game or need a refresher, choose "HOW TO PLAY" from the main menu ('A').
-    - Read the provided instructions to understand the game rules and how to navigate the game.
+  <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/tablet-page1.png" alt="Tablet 1" width="250"> &nbsp; <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/tablet-page2.png" alt="Tablet 2" width="250"> &nbsp; <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/tablet-page3.png" alt="Tablet 3" width="250">
+- #### Mobile
 
-3. **Play Game**:
-    - To start playing, select "PLAY GAME" from the main menu ('B').
-    - You will then have the option to choose a game category: "COUNTRY," "CITY," or "LANDMARKS." Enter the corresponding letter to make your choice ('A' for "COUNTRY," 'B' for "CITY," or 'C' for "LANDMARKS").
-
-4. **Gameplay**:
-    - You'll be presented with a hidden name from your chosen category, with the letters initially replaced by dashes.
-    - You have 8 lives to guess the name correctly.
-    - Guess one letter at a time by entering a single alphabetical character.
-    - If the letter you guess is in the name, it will be revealed. If not, you'll lose a life.
-    - Continue guessing letters until you either guess the entire name correctly or run out of lives.
-
-5. **Winning the Game**:
-    - If you correctly guess the name, congratulations, you win the game!
-    - The game will display a winning message.
-
-6. **Losing the Game**:
-    - If you run out of lives without guessing the name correctly, you lose the game.
-    - The game will display a losing message and reveal the correct answer.
-
-7. **Play Again**:
-    - After a game, you have the option to play another round within the same category.
-    - If you choose to play again, you can keep guessing new names to improve your skills.
-
-8. **Game Statistics**:
-    - You can view your game statistics at any time by selecting "GAME STATISTICS" from the main menu ('C').
-    - This option shows you the number of games played, games won, and games lost.
-
-9. **Exiting the Game**:
-    - To exit the game, select "EXIT" from the main menu ('E').
-
+  <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/mobile-phone-page1.png" alt="Mobile 1" width="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/mobile-phone-page2.png" alt="Mobile 2" width="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/mobile-phone-page3.png" alt="Mobile 3" width="200">
 
 ## Features
 ### Implemented Features
