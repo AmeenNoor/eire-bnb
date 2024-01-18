@@ -13,7 +13,8 @@ Remember => DISABLE_COLLECTSTATIC (HEROKU)
 Ameen Noor
 
 ## Introduction
-
+EireBnb, where you can find awesome places to stay in Ireland. Our website is tailored for users looking to explore Ireland and find the perfect stay for their unique preferences.
+With EireBnb, users can easily browse through a variety of accommodations, each offering its own unique charm and amenities. Our website is designed to provide detailed information about each accommodation, helping you make an informed decision. Whether you're a solo traveler, a couple on a romantic getaway, or a family seeking adventure, EireBnb is your trusted companion in discovering and reserving accommodations that suit your needs.
 
 
 ![Am I Responsive](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/responsive/am-i-responsive.png)
