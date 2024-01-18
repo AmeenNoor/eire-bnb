@@ -28,6 +28,7 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
   - [User Experience (UX)](#user-experience-ux)
+    - [Target Audience](#target-audience)
     - [User storis](#user-storis)
     - [Design](#design)
       - [Flow Chart](#flow-chart)
@@ -57,6 +58,11 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
 
 
 ## User Experience (UX)
+
+### Target Audience
+
+EireBnb is for everyone who loves exploring Ireland! Families, couples, solo travelers, and business folks, no matter your age, we've got cozy places for you. If you like booking online and care about the environment, EireBnb is your go-to. Whether you're a tech fan, a local looking for new spots, or just love unique stays, we've made it easy for you to find the perfect place in Ireland.
+
 ### User storis
 
 1. As a Site User I can browse through a list of accommodations so that I can explore various options
