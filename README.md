@@ -1,4 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
 
 * Run pip show django-allauth in your terminal. Your output should look like the image below.
 The Location value is the information we are interested in.
@@ -6,7 +6,7 @@ We need to replace the file path shown in the video ../.pip-modules/lib/python3.
 The result should looking like the example below, and running it should successfully copy the AllAuth templates.
 Example: cp -r /workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/allauth/templates/* ./templates/allauth/ (edited)
 Remember => DISABLE_COLLECTSTATIC (HEROKU)
-# Worldscape Adventure
+# EireBnb
 
 ## Author
 
@@ -22,7 +22,7 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
 
 ## Table of Contents
 
-- [Worldscape Adventure](#worldscape-adventure)
+- [EireBnb](#eirebnb)
   - [Author](#author)
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
