@@ -30,8 +30,7 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
   - [User Experience (UX)](#user-experience-ux)
     - [Target Audience](#target-audience)
     - [User storis](#user-storis)
-    - [Design](#design)
-      - [Flow Chart](#flow-chart)
+    - [Design Choices](#design-choices)
     - [Wireframes](#wireframes)
   - [Features](#features)
     - [Implemented Features](#implemented-features)
@@ -84,11 +83,19 @@ EireBnb is for everyone who loves exploring Ireland! Families, couples, solo tra
 9. As a Site Admin I can view, add, edit, or remove accommodations so that I can manage and update accommodations
 
 
-### Design
-#### Flow Chart
-
-
-![Flow Chart](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/flowchart/flow-chart.png)
+### Design Choices
+- #### Colors
+   The website's color scheme uses soft and warm tones that make people feel calm and relaxed. There is also a bright color that adds excitement and passion to the design. White is used for the background and text, making everything look clean and simple, plus a deep blue color with a hint of purple, which looks nice. The colors were picked to make the website look good, go well together.
+   
+  ![colors](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/design/colors.png)
+  
+- #### Typography
+  The 'Rye' font was chosen for the logo part to give a nice appearance and clear visual. 'Nanum Myeongjo' was selected for its readability, ensuring clear body text.
+  
+  <div align="center">
+    <img src="https://github.com/AmeenNoor/activeLife-center/assets/19653847/70e02090-847e-4d60-bbdc-653e96d1efda" alt="rye-font">
+    <img src="https://github.com/AmeenNoor/activeLife-center/assets/19653847/b744b425-ff2e-4824-97ab-2f60627eafcc" alt="nanum-myeongjo-font">
+  </div>
 
 
 ### Wireframes
