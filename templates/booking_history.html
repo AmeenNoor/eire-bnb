@@ -1,6 +1,25 @@
 {% extends 'base.html' %} {% block content %}
 <div class="text-center mb-5"><h1>Booking History</h1></div>
 
+<div class="container mt-3">
+  {% if messages %} {% for message in messages %} {% if 'success_booking' in message.extra_tags %}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+  {% elif 'update_booking' in message.extra_tags %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+  {% endif %} {% endfor %} {% endif %}
+</div>
+
 <div class="row row-cols-1 g-4">
   {% for booking in bookings %}
   <div class="col">

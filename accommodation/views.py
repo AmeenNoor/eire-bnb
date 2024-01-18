@@ -78,6 +78,9 @@ class BookAccommodationView(LoginRequiredMixin, CreateView):
             return self.form_invalid(form)
 
         form.save()
+        messages.success(self.request, 'Booking successful!',
+                         extra_tags='success_booking')
+        # https://stackoverflow.com/questions/43588876/how-can-i-add-additional-data-to-django-messages
         return super().form_valid(form)
 
 class BookingHistoryView(LoginRequiredMixin, ListView):
@@ -114,6 +117,8 @@ class UpdateBookingView(LoginRequiredMixin, UpdateView):
                 self.request, 'Accommodation is not available for the selected dates.')
             return self.form_invalid(form)
 
+        messages.success(
+            self.request, 'Booking updated successfully!', extra_tags='update_booking')
         return super().form_valid(form)
 
 
