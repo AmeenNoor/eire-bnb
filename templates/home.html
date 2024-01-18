@@ -1,4 +1,20 @@
 {% extends 'base.html' %} {% block content %} {% load static %}
+
+<div class="container mt-3">
+    {% if messages %}
+    {% for message in messages %}
+    {% if 'success' in message.tags and 'success_booking' not in message.tags and 'update_booking' not in message.tags %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+</div>
+
+
+
 <!-- CAROUSEL SECTION -->
 <!-- https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_carousel2 -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">

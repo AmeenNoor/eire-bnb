@@ -130,4 +130,8 @@ class CancelBookingView(LoginRequiredMixin, DeleteView):
     def get_queryset(self):
         return Booking.objects.filter(user=self.request.user)
 
+    def delete(self, request, *args, **kwargs):
+        messages.success(
+            self.request, 'Booking canceled successfully!', extra_tags='cancel_booking')
+        return super().delete(request, *args, **kwargs)
 
