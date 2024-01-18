@@ -32,6 +32,13 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
     - [User storis](#user-storis)
     - [Design Choices](#design-choices)
     - [Wireframes](#wireframes)
+  - [Information Architecture](#information-architecture)
+    - [Entity Relationship Diagram](#entity-relationship-diagram)
+    - [Database Choice](#database-choice)
+    - [Data Models](#data-models)
+      - [Accommodation Data Model](#accommodation-data-model)
+      - [Booking Data Model](#booking-data-model)
+    - [CRUD Diagrams](#crud-diagrams)
   - [Features](#features)
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
@@ -87,7 +94,7 @@ EireBnb is for everyone who loves exploring Ireland! Families, couples, solo tra
 - #### Colors
    The website's color scheme uses soft and warm tones that make people feel calm and relaxed. There is also a bright color that adds excitement and passion to the design. White is used for the background and text, making everything look clean and simple, plus a deep blue color with a hint of purple, which looks nice. The colors were picked to make the website look good, go well together.
    
-  ![colors](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/design/colors.png)
+  ![colors](https://github.com/AmeenNoor/eire-bnb/blob/main/media/ux/design/colors.png)
   
 - #### Typography
   The 'Rye' font was chosen for the logo part to give a nice appearance and clear visual. 'Nanum Myeongjo' was selected for its readability, ensuring clear body text.
@@ -108,6 +115,78 @@ EireBnb is for everyone who loves exploring Ireland! Families, couples, solo tra
 - #### Mobile
 
   <img src="https://github.com/AmeenNoor/eire-bnb/blob/main/media/ux/wireframes/mobile-home-page.png" alt="Mobile 1" width="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/AmeenNoor/eire-bnb/blob/main/media/ux/wireframes/mobile-accommodations-page.png" alt="Mobile 2" width="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+## Information Architecture
+### Entity Relationship Diagram
+
+![Entity Relationship Diagram](https://github.com/AmeenNoor/eire-bnb/blob/main/media/information_architecture/entity-relationship-diagram.png)
+
+### Database Choice
+PostgreSQL was chosen as the database for its relational data structure. This choice aligns with the project's needs, where accommodations and bookings involve complex relationships. Additionally, deploying on Heroku. Choosing PostgreSQL on Heroku was a smart move because it helps us have a reliable and scalable database.
+
+### Data Models
+#### Accommodation Data Model
+**Accommodation Model:**
+The Accommodation model represents different types of places available for booking.
+
+**Fields:**
+
+- **id** (Primary Key, Integer): Unique identifier for each accommodation.
+- **name** (String): Name of the accommodation.
+- **description** (Text): Description of the accommodation.
+- **address** (String): Address of the accommodation.
+- **city** (String): City where the accommodation is located.
+- **country** (String): Country where the accommodation is located.
+- **price_per_night** (Decimal): Cost per night for the accommodation.
+- **capacity** (Integer): Maximum number of guests the accommodation can accommodate.
+- **accommodation_type** (String): Type of accommodation (e.g., Flat, Room, Apartment).
+- **accommodation_image** (Cloudinary Image): Image of the accommodation.
+
+**Validation:**
+
+- **name:** Required, minimum 1 character, maximum 100 characters.
+- **price:** Required, decimal format.
+
+**CRUD Operations:**
+
+- **Create:** Accommodations are created when a user adds a new place for booking.
+- **Read:** Accommodations are read when users browse available places, view details, or make bookings.
+- **Update:** Accommodations are updated when a user modifies details like price, capacity, or accommodation type.
+
+#### Booking Data Model
+**Booking Model:**
+The Booking model represents reservations made by users for specific accommodations.
+
+**Fields:**
+
+- **id** (Primary Key, Integer): Unique identifier for each booking.
+- **first_name** (String): First name of the person making the booking.
+- **last_name** (String): Last name of the person making the booking.
+- **phone_number** (String): Phone number of the person making the booking.
+- **email** (Email): Email of the person making the booking.
+- **check_in_date** (Date): Date when the guests will check-in.
+- **check_out_date** (Date): Date when the guests will check-out.
+- **booking_date** (DateTime): Date and time when the booking was made.
+- **user** (Foreign Key to User): Reference to the user making the booking.
+- **accommodation** (Foreign Key to Accommodation): Reference to the booked accommodation.
+
+**Validation:**
+
+- **first_name, last_name:** Required, minimum 1 character, maximum 50 characters.
+- **phone_number:** Required, string format.
+- **email:** Required, valid email format.
+- **number_of_guests:** Required, integer format.
+- **check_in_date, check_out_date:** Required, date format.
+
+**CRUD Operations:**
+
+- **Create:** Bookings are created when a user reserves an accommodation.
+- **Read:** Bookings are read when users view their booking history or details of a specific booking.
+- **Update:** Bookings can be updated if the user wants to modify the check-in/out dates or the number of guests.
+- **Delete:** Bookings can be canceled, resulting in a deletion of the booking record.
+
+### CRUD Diagrams
 
 ## Features
 ### Implemented Features
