@@ -5,8 +5,8 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django import forms
 from django.utils import timezone
+from django.contrib import messages
 from django.core.exceptions import ValidationError
-
 
 
 class Home(TemplateView):
@@ -42,7 +42,7 @@ class BookingForm(forms.ModelForm):
             'check_in_date': forms.DateInput(attrs={'type': 'date'}, format='%d/%m/%Y'),
             'check_out_date': forms.DateInput(attrs={'type': 'date'}, format='%d/%m/%Y'),
         }
-    
+
     def clean(self):
         cleaned_data = super().clean()
         check_in_date = cleaned_data.get('check_in_date')
@@ -52,20 +52,33 @@ class BookingForm(forms.ModelForm):
             raise ValidationError('Check-in date must be in the future.')
 
         if check_out_date and (check_out_date <= check_in_date or check_out_date < timezone.now().date()):
-            raise ValidationError(
-                'Ensure that the check-out date is later than the check-in date ')
-
-
+            raise ValidationError('Ensure that the check-out date is later than the check-in date ')
 
 class BookAccommodationView(LoginRequiredMixin, CreateView):
     model = Booking
     form_class = BookingForm
     template_name = 'book_accommodation.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('booking_history')
 
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        accommodation_id = self.kwargs.get('pk')
+        accommodation = Accommodation.objects.get(pk=accommodation_id)
+        form.instance.accommodation = accommodation
 
+        existing_bookings = Booking.objects.filter(
+            accommodation=accommodation,
+            check_out_date__gt=form.cleaned_data['check_in_date'],
+            check_in_date__lt=form.cleaned_data['check_out_date'],
+        )
 
+        if existing_bookings.exists():
+            messages.error(
+                self.request, 'Accommodation is not available for the selected dates.')
+            return self.form_invalid(form)
 
+        form.save()
+        return super().form_valid(form)
 
 class BookingHistoryView(LoginRequiredMixin, ListView):
     model = Booking
@@ -84,6 +97,24 @@ class UpdateBookingView(LoginRequiredMixin, UpdateView):
 
     def get_queryset(self):
         return Booking.objects.filter(user=self.request.user)
+    
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        accommodation_id = form.instance.accommodation.pk
+        accommodation = Accommodation.objects.get(pk=accommodation_id)
+
+        existing_bookings = Booking.objects.filter(
+            accommodation=accommodation,
+            check_out_date__gt=form.cleaned_data['check_in_date'],
+            check_in_date__lt=form.cleaned_data['check_out_date'],
+        )
+
+        if existing_bookings.exists():
+            messages.error(
+                self.request, 'Accommodation is not available for the selected dates.')
+            return self.form_invalid(form)
+
+        return super().form_valid(form)
 
 
 class CancelBookingView(LoginRequiredMixin, DeleteView):
@@ -93,3 +124,5 @@ class CancelBookingView(LoginRequiredMixin, DeleteView):
 
     def get_queryset(self):
         return Booking.objects.filter(user=self.request.user)
+
+

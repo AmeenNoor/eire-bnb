@@ -15,7 +15,7 @@
                         {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
                     </p>
 
-                    <form class="signup mt-5 mb-5" id="signup_form" method="POST" action="{% url 'account_signup' %}">
+                    <form class="mt-5 mb-5 d-flex flex-column align-items-center"  id="signup_form" method="POST" action="{% url 'account_signup' %}">
                         {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
                         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                         {% endif %}

@@ -5,13 +5,13 @@ trans "Sign In" %} {% endblock %} {% block content %}
     <div class="col-md-5">
       <div class="card custom-card">
         <div class="card-body">
-          <h1 class="card-title mt-4 mb-3">{% trans "Sign In" %}</h1>
+          <h1 class="card-title mt-4 mb-3 text-center">{% trans "Sign In" %}</h1>
           <p class="card-text">
             {% blocktrans %}If you have not created an account yet, then please
             <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
           </p>
 
-          <form class="login mt-5 mb-5" method="POST" action="{% url 'account_login' %}">
+          <form class="mt-5 mb-5 d-flex flex-column align-items-center"  method="POST" action="{% url 'account_login' %}">
             {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
             <input
               type="hidden"
