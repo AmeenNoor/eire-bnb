@@ -27,18 +27,17 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
   - [Author](#author)
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
+  - [Agile Process](#agile-process)
+    - [Project Goals](#project-goals)
+    - [Initial User Stories](#initial-user-stories)
+    - [Agile Methodology](#agile-methodology)
   - [User Experience (UX)](#user-experience-ux)
     - [Target Audience](#target-audience)
-    - [User storis](#user-storis)
     - [Design Choices](#design-choices)
     - [Wireframes](#wireframes)
   - [Information Architecture](#information-architecture)
-    - [Entity Relationship Diagram](#entity-relationship-diagram)
-    - [Database Choice](#database-choice)
-    - [Data Models](#data-models)
       - [Accommodation Data Model](#accommodation-data-model)
       - [Booking Data Model](#booking-data-model)
-    - [CRUD Diagrams](#crud-diagrams)
   - [Features](#features)
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
@@ -63,13 +62,31 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
     - [Mentor](#mentor)
 
 
-## User Experience (UX)
+## Agile Process
+### Project Goals
+EireBnb, was developed with the following goals:
 
-### Target Audience
+1. **Provide Accommodation Information:**
+   - Let people check out and learn about different places to stay in Ireland.
+   - They can see details like descriptions, prices, and what's available.
 
-EireBnb is for everyone who loves exploring Ireland! Families, couples, solo travelers, and business folks, no matter your age, we've got cozy places for you. If you like booking online and care about the environment, EireBnb is your go-to. Whether you're a tech fan, a local looking for new spots, or just love unique stays, we've made it easy for you to find the perfect place in Ireland.
+2. **Manage Bookings Easily:**
+   - Help users book the places they like.
+   - If someone signs up, they can easily see and change their bookings.
 
-### User storis
+3. **Keep the Site Updated:**
+   - Give site admins the tools to add new accommodations, update info, or remove old records.
+   - Make sure everything on the site stays accurate and helpful.
+
+4. **Make It Easy for Everyone:**
+   - Design the website so it's easy for anyone to use.
+   - Whether you're just looking or you're a member, it should be simple to find what you need.
+
+5. **Keep Things Safe and Private:**
+   - Make sure all user info is safe and secure.
+   - If someone signs up, their personal details are kept private and secure.
+
+### Initial User Stories
 
 1. As a Site User I can browse through a list of accommodations so that I can explore various options
 
@@ -80,15 +97,28 @@ EireBnb is for everyone who loves exploring Ireland! Families, couples, solo tra
 4. As a Site User I can view my booking history so that I can track past and upcoming reservations
 
 5. As a Site User/ Admin I can cancel booking so that I can adjust plans
-   
+
 6. As a Site User I can update or modify existing booking details so that I can change dates or accommodations
 
 7. As a Site User I can register for an account so that I can access booking features
 
 8. As a Site User I can log in and out of my account so that I can ensure secure access
-   
+
 9. As a Site Admin I can view, add, edit, or remove accommodations so that I can manage and update accommodations
 
+### Agile Methodology
+
+An Agile methodology was employed in the creation of this application, ensuring a flexible and iterative approach to development. GitHub Projects was utilized to manage and track user stories, allowing for the prioritization and implementation of features based on their significance to the app's functionality and user experience. Three distinct categories, "Must Have", "Could I have" and "Should Have," were established to indicate the level of importance for each user story.
+
+![Agile1](https://github.com/AmeenNoor/eire-bnb/blob/main/media/agile_process/agile-image1.png)
+
+![Agile2](https://github.com/AmeenNoor/eire-bnb/blob/main/media/agile_process/agile-image2.png)
+
+## User Experience (UX)
+
+### Target Audience
+
+EireBnb is for everyone who loves exploring Ireland! Families, couples, solo travelers, and business folks, no matter your age, we've got cozy places for you. If you like booking online and care about the environment, EireBnb is your go-to. Whether you're a tech fan, a local looking for new spots, or just love unique stays, we've made it easy for you to find the perfect place in Ireland.
 
 ### Design Choices
 - #### Colors
@@ -118,14 +148,14 @@ EireBnb is for everyone who loves exploring Ireland! Families, couples, solo tra
 
 
 ## Information Architecture
-### Entity Relationship Diagram
+- ### Entity Relationship Diagram
 
 ![Entity Relationship Diagram](https://github.com/AmeenNoor/eire-bnb/blob/main/media/information_architecture/entity-relationship-diagram.png)
 
-### Database Choice
+- ### Database Choice
 PostgreSQL was chosen as the database for its relational data structure. This choice aligns with the project's needs, where accommodations and bookings involve complex relationships. Additionally, deploying on Heroku. Choosing PostgreSQL on Heroku was a smart move because it helps us have a reliable and scalable database.
 
-### Data Models
+- ### Data Models
 #### Accommodation Data Model
 **Accommodation Model:**
 The Accommodation model represents different types of places available for booking.
@@ -186,7 +216,6 @@ The Booking model represents reservations made by users for specific accommodati
 - **Update:** Bookings can be updated if the user wants to modify the check-in/out dates or the number of guests.
 - **Delete:** Bookings can be canceled, resulting in a deletion of the booking record.
 
-### CRUD Diagrams
 
 ## Features
 ### Implemented Features
