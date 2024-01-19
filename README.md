@@ -36,6 +36,9 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
     - [Design Choices](#design-choices)
     - [Wireframes](#wireframes)
   - [Information Architecture](#information-architecture)
+    - [Entity Relationship Diagram](#entity-relationship-diagram)
+    - [Database Choice](#database-choice)
+    - [Data Models](#data-models)
       - [Accommodation Data Model](#accommodation-data-model)
       - [Booking Data Model](#booking-data-model)
   - [Features](#features)
@@ -148,14 +151,14 @@ EireBnb is for everyone who loves exploring Ireland! Families, couples, solo tra
 
 
 ## Information Architecture
-- ### Entity Relationship Diagram
+### Entity Relationship Diagram
 
 ![Entity Relationship Diagram](https://github.com/AmeenNoor/eire-bnb/blob/main/media/information_architecture/entity-relationship-diagram.png)
 
-- ### Database Choice
+### Database Choice
 PostgreSQL was chosen as the database for its relational data structure. This choice aligns with the project's needs, where accommodations and bookings involve complex relationships. Additionally, deploying on Heroku. Choosing PostgreSQL on Heroku was a smart move because it helps us have a reliable and scalable database.
 
-- ### Data Models
+### Data Models
 #### Accommodation Data Model
 **Accommodation Model:**
 The Accommodation model represents different types of places available for booking.
@@ -425,9 +428,9 @@ The main program consists of different functions.
 
 
 ### Manual Testing
-View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XAiSfxOVXIjn1UhXu-7vf35j0WS67IYKl_2fVBWd0/edit#gid=0)
+View manual testing results [here!](https://docs.google.com/spreadsheets/d/1ZbcYyAvHtrs21mm9MX5rQsxUZEM0ATxkRj6NU_ZPbKE/edit#gid=0)
 
-![Manual Testing Image](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/manual-testing.png)
+![Manual Testing Image](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/manual_testing/manual-testing.png)
 
 ### Fixing Bugs
 - #### Validation Bug
