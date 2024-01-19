@@ -53,6 +53,7 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
     - [Frameworks, Tools, Libraries and Programs Used](#frameworks-tools-libraries-and-programs-used)
   - [Testing](#testing)
     - [Validation Testing](#validation-testing)
+    - [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
     - [Manual Testing](#manual-testing)
     - [Fixing Bugs](#fixing-bugs)
   - [Deployment](#deployment)
@@ -426,6 +427,23 @@ The main program consists of different functions.
 
 ![Views](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation_testing/python/views.png)
 
+### Compatibility and Responsive Testing
+The website was tested on various browsers and devices to ensure compatibility and optimal user experience. The testing process yielded successful results for most browsers and devices. See table and screenshots below:
+
+<div align="center">
+
+| Device                    | Browser         | OS       | Screen Width | Status |
+| ------------------------- | --------------- | -------- | ------------ | ------ |
+| dev tools: iPhone SE      | Chrome          | iOS      | 375 x 667    | ✔      |
+| dev tools: iPhone 12      | Chrome          | iOS      | 390 x 844    | ✔      |
+| dev tools: iPad Air       | Chrome          | iOS      | 820 x 1180   | ✔      |
+| dev tools: Galaxy S8      | Chrome          | Android  | 362 x 740    | ✔      |
+| real computer: Toshiba    | Microsoft Edge  | Windows 10 | 1366 x 768  | ✔      |
+| real computer: Toshiba    | Firefox         | Ubuntu 22.04 | 1920 x 1080 | ✔      |
+| real computer: MacBook Pro 13" | Safari    | iOS      | 1920 x 1080  |  ✔     |
+| real mobile phone: iPhone 7 Plus | Safari    | iOS      | 1920 x 1080  |  ✔     |
+
+</div>
 
 ### Manual Testing
 View manual testing results [here!](https://docs.google.com/spreadsheets/d/1ZbcYyAvHtrs21mm9MX5rQsxUZEM0ATxkRj6NU_ZPbKE/edit#gid=0)
