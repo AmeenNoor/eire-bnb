@@ -401,23 +401,23 @@ The main program consists of different functions.
 **accommodation app:**
 1. #### admin.py
 
-![Admin](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/admin.py)  
+![Admin](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/admin.png)  
 
 1. #### apps.py
   
-![Apps](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/apps.py)  
+![Apps](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/apps.png)  
 
 1. #### models.py
 
-![Models](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/models.py)  
+![Models](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/models.png)  
 
 1. #### urls.py
 
-![Urls](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/urls.py)  
+![Urls](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/urls.png)  
 
 1. #### views.py
 
-![Views](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/views.py)
+![Views](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/views.png)
 
 
 ### Manual Testing
@@ -427,21 +427,16 @@ View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XA
 
 ### Fixing Bugs
 - #### Validation Bug
-  
+  **Python**
   1. **worldscape.py**:
-  Indentation issues in the 'worldscape.py' file have been fixed.
+  Indentation issues in the 'urls.py' file have been fixed.
 
-  ![Worldscape Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/worldscape-fixed.png)
+  ![Urls Fixed](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/fixing_bugs/python/urls-fixed.png)
 
-  2. **names.py**:
-  Indentation issues in the 'names.py' file have been fixed.
+  1. **names.py**:
+  Indentation issues in the 'views.py' file have been fixed.
 
-  ![Names Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/names-fixed.png) 
-  
-  3. **run.py**:
-  Indentation issues in the 'run.py' file have been fixed.
-
-  ![Run Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/run-fixed.png)
+  ![Views Fixed](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/fixing_bugs/python/views-fixed.png)
 
 ## Deployment
 ### Local deployment
