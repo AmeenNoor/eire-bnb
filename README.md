@@ -396,28 +396,32 @@ The main program consists of different functions.
 
 - 1. **HTML:**
 - 2. **CSS:**
+    Validation testing was performed using Jigsaw to ensure code quality. Here is the validation testing results:
+    
+    ![CSS Test](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation_testing/css/css-test.png)  
+    
 - 3. **Python**
     Validation testing was performed using CI's PEP8 tool to ensure code quality. Here are the validation testing results for each file:
 **accommodation app:**
 1. #### admin.py
 
-![Admin](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/admin.png)  
+![Admin](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation_testing/python/admin.png)  
 
 1. #### apps.py
   
-![Apps](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/apps.png)  
+![Apps](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation_testing/python/apps.png)  
 
 1. #### models.py
 
-![Models](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/models.png)  
+![Models](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation_testing/python/models.png)  
 
 1. #### urls.py
 
-![Urls](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/urls.png)  
+![Urls](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation_testing/python/urls.png)  
 
 1. #### views.py
 
-![Views](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation-testing/python/views.png)
+![Views](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation_testing/python/views.png)
 
 
 ### Manual Testing
@@ -428,12 +432,12 @@ View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XA
 ### Fixing Bugs
 - #### Validation Bug
   **Python**
-  1. **worldscape.py**:
+  1. **urls.py**:
   Indentation issues in the 'urls.py' file have been fixed.
 
   ![Urls Fixed](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/fixing_bugs/python/urls-fixed.png)
 
-  1. **names.py**:
+  2. **views.py**:
   Indentation issues in the 'views.py' file have been fixed.
 
   ![Views Fixed](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/fixing_bugs/python/views-fixed.png)
