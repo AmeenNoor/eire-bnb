@@ -8,3 +8,5 @@ urlpatterns = [
 ]
 
 handler404 = 'accommodation.views.error_404_view'
+
+handler500 = 'accommodation.views.handler500'
