@@ -172,3 +172,10 @@ class CancelBookingView(LoginRequiredMixin, DeleteView):
             extra_tags="cancel_booking"
         )
         return super().delete(request, *args, **kwargs)
+
+def error_404_view(request, exception):
+    """
+    Displays 404.html path
+    """
+    # https://github.com/PPindel/test-a-wheel/blob/0c046372aa5c8eb0e45a575fd59af916244c025e/home/views.py#L20
+    return render(request, '404.html')
