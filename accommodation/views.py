@@ -179,3 +179,11 @@ def error_404_view(request, exception):
     """
     # https://github.com/PPindel/test-a-wheel/blob/0c046372aa5c8eb0e45a575fd59af916244c025e/home/views.py#L20
     return render(request, '404.html')
+
+
+def handler500(request, *args, **argv):
+    """
+    Displays 500.html path
+    """
+    # https://github.com/PPindel/test-a-wheel/blob/0c046372aa5c8eb0e45a575fd59af916244c025e/home/views.py#L20
+    return render(request, '500.html')
