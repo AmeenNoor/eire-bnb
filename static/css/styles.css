@@ -11,9 +11,7 @@ padding and borders */
 
 body {
     font-family: 'Nanum Myeongjo', serif;
-    color: #141850;
-    background-color: #FAE5DF !important;
-
+    color: #141850 !important;
 }
 
 .logo-container {
@@ -35,25 +33,28 @@ footer {
     display: flex;
     align-items: center;
     padding: 20px;
+    background-color: #F5CAC2;
 }
 
 header {
     justify-content: space-between;
     /* https: //www.w3schools.com/cssref/css3_pr_justify-content.php */
-    margin-bottom: 15px;
+    margin-bottom: auto;
 }
 
 nav a {
     margin-right: 20px;
     text-decoration: none;
     color: #141850;
+    font-size: 24px;
 }
 
 .content {
     width: 90%;
     margin: 0 auto;
-    height: 90%;
+    min-height: calc(100vh - 170px);
     padding: 20px;
+    border: 5px solid #141850;
 }
 
 .card-img-top {
@@ -63,14 +64,13 @@ nav a {
 
 footer {
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: auto;
     flex-wrap: wrap;
 }
 
 .left-footer {
     display: flex;
     flex-wrap: wrap;
-    /* Allow items to wrap onto a new line if needed */
 }
 
 .email,
@@ -79,7 +79,6 @@ footer {
     align-items: center;
     margin-right: 20px;
     margin-bottom: 10px;
-    /* Adjust the margin as needed */
 }
 
 .email span,
@@ -96,8 +95,7 @@ footer a {
 .dropbtn {
     background-color: #ed7966;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 12px;
     border: none;
     cursor: pointer;
 }
@@ -112,14 +110,14 @@ footer a {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: #141850;
+    padding: 12px 12px;
     text-decoration: none;
+    font-size: 20px;
     display: block;
 }
 

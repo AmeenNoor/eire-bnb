@@ -1,4 +1,5 @@
 {% extends 'base.html' %} {% block content %}
+<div>
 <div class="text-center mb-5"><h1>Booking History</h1></div>
 
 <div class="container mt-3">
@@ -24,9 +25,8 @@
 </div>
   {% endif %} {% endfor %} {% endif %}
 </div>
-
+{% for booking in bookings %}
 <div class="row row-cols-1 g-4">
-  {% for booking in bookings %}
   <div class="col">
     <div class="card">
       <div class="row g-0">
@@ -65,8 +65,9 @@
       </div>
     </div>
   </div>
+</div>
   {% empty %}
-  <h1>No bookings found.</h1>
+  <div class="text-center"><h1>No bookings found.</h1></div>
   {% endfor %}
 </div>
 

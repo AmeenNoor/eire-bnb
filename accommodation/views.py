@@ -44,7 +44,13 @@ class AccommodationDetail(DetailView):
 
 
 class BookingForm(forms.ModelForm):
+    """
+    Form to handle booking information
+    """
     class Meta:
+        """
+        Meta class for defining form metadata
+        """
         model = Booking
         fields = [
             "first_name",
@@ -65,6 +71,9 @@ class BookingForm(forms.ModelForm):
         }
 
     def clean(self):
+        """
+        Custom cleaning method for form validation
+        """
         cleaned_data = super().clean()
         check_in_date = cleaned_data.get("check_in_date")
         check_out_date = cleaned_data.get("check_out_date")
@@ -83,12 +92,18 @@ class BookingForm(forms.ModelForm):
 
 
 class BookAccommodationView(LoginRequiredMixin, CreateView):
+    """
+    View for booking accommodations
+    """
     model = Booking
     form_class = BookingForm
     template_name = "book_accommodation.html"
     success_url = reverse_lazy("booking_history")
 
     def form_valid(self, form):
+        """
+        Override method for valid form submission
+        """
         form.instance.user = self.request.user
         accommodation_id = self.kwargs.get("pk")
         accommodation = Accommodation.objects.get(pk=accommodation_id)
@@ -116,24 +131,39 @@ class BookAccommodationView(LoginRequiredMixin, CreateView):
 
 
 class BookingHistoryView(LoginRequiredMixin, ListView):
+    """
+    View to display user's booking history
+    """
     model = Booking
     template_name = "booking_history.html"
     context_object_name = "bookings"
 
     def get_queryset(self):
+        """
+        Override method to customize queryset for the view
+        """
         return Booking.objects.filter(user=self.request.user)
 
 
 class UpdateBookingView(LoginRequiredMixin, UpdateView):
+    """
+    View to update existing bookings
+    """
     model = Booking
     form_class = BookingForm
     template_name = "update_booking.html"
     success_url = reverse_lazy("booking_history")
 
     def get_queryset(self):
+        """
+        Override method to customize queryset for the view
+        """
         return Booking.objects.filter(user=self.request.user)
 
     def form_valid(self, form):
+        """
+        Override method for valid form submission during update
+        """
         form.instance.user = self.request.user
         accommodation_id = form.instance.accommodation.pk
         accommodation = Accommodation.objects.get(pk=accommodation_id)
@@ -159,14 +189,23 @@ class UpdateBookingView(LoginRequiredMixin, UpdateView):
 
 
 class CancelBookingView(LoginRequiredMixin, DeleteView):
+    """
+    View to cancel existing bookings
+    """
     model = Booking
     template_name = "cancel_booking.html"
     success_url = reverse_lazy("booking_history")
 
     def get_queryset(self):
+        """
+        Override method to customize queryset for the view
+        """
         return Booking.objects.filter(user=self.request.user)
 
     def delete(self, request, *args, **kwargs):
+        """
+        Override method for handling booking cancellation
+        """
         messages.success(
             self.request, "Booking canceled successfully!",
             extra_tags="cancel_booking"
