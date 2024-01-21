@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="card custom-card">
+        <div class="card-body">
+          <h1 class="card-title mt-4 mb-3 text-center">Oops! Page Not Found</h1>
+          <p class="card-text text-center">
+            The page you are looking for might have been removed, had its name
+            changed or is temporarily unavailable.
+          </p>
+          <form action="{% url 'home' %}">
+            <div class="d-flex justify-content-center">
+              <button
+                class="btn btn-primary mt-5 mb-2"
+                style="background-color: #141850; border-color: #141850"
+                type="submit"
+              >
+                Back to Home
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
