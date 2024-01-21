@@ -224,43 +224,14 @@ The Booking model represents reservations made by users for specific accommodati
 ## Features
 ### Implemented Features
 
-1. Main Menu Navigation: The main menu provides clear options for the user, including "How to Play," "Play Game," "Game Statistics," and "Exit," ensuring easy navigation and interaction.
+1. Responsive Design: The website is designed to be responsive, adapting to different screen sizes and providing an optimal viewing experience on various devices, from desktops to mobile devices.
+2. Navigation: The header includes navigation links for easy access to different sections of the website. The navigation is designed to be user-friendly and visually appealing.
+3. Accommodation Listings: The main content area displays a list of accommodations, each represented as a card. Accommodations include an image, name, price, and city for quick reference. Users can click on "More Details" to view additional information about each accommodation.
+4. Booking Functionality: Users have the option to book accommodations directly from the listing by clicking on the "Book" button. The website likely includes functionality to handle booking requests, capturing user details, and managing reservations.
+5. Accommodation Detail Page: There is a dedicated page for detailed information about a specific accommodation, including a larger image and additional details.
+The layout is designed to provide a comprehensive view of the accommodation details.
+6. Dropdown Navigation: The header includes a dropdown navigation feature, enhancing the user experience by organizing related links under a single dropdown button.
 
-![Feature1](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature1.png)
-
-2. Game Instructions ("How to Play"): Users can access game instructions, allowing them to quickly understand the game's rules.
-
-![Feature2](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature2.png)
-
-3. Game Category Selection: Players can choose from three categories - countries, cities, or landmarks 
-
-![Feature3](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature3.png)
-
-4. Interactive Gameplay: During the game, users interact by guessing letters one at a time, with feedback. Correct guesses reveal hidden letters, while incorrect ones deduct lives.
-
-![Feature4](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature4.png)
-
-5. Progress Tracking ("Game Statistics"): The "Game Statistics" option allows users to track their progress effortlessly, displaying the number of games played, games won, and games lost.
-
-![Feature5](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature5.png)
-
-6. Exit Option: Users can exit the game by selecting "Exit" from the main menu.
-
-![Feature6](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature6.png)
-
-8. Colorful Notifications: The game provides interactive feedback and colorful notifications.
-
-![Feature7A](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-a.png)
-
-![Feature7B](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-b.png)
-
-![Feature7C](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-c.png)
-
-![Feature7D](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-d.png)
-
-![Feature7E](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-e.png)
-
-![Feature7F](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-f.png)
 
 
 ### Future Features
