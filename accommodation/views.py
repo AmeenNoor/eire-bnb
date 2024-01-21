@@ -57,7 +57,6 @@ class BookingForm(forms.ModelForm):
             "last_name",
             "phone_number",
             "email",
-            "number_of_guests",
             "check_in_date",
             "check_out_date",
         ]
@@ -117,7 +116,7 @@ class BookAccommodationView(LoginRequiredMixin, CreateView):
 
         if existing_bookings.exists():
             messages.error(
-                self.request, "Accommodation is not available" +
+                self.request, "Accommodation is not available " +
                 "for the selected dates."
             )
             return self.form_invalid(form)
@@ -176,7 +175,7 @@ class UpdateBookingView(LoginRequiredMixin, UpdateView):
 
         if existing_bookings.exists():
             messages.error(
-                self.request, "Accommodation is not available" +
+                self.request, "Accommodation is not available " +
                 "for the selected dates."
             )
             return self.form_invalid(form)

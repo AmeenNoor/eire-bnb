@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
-{% for accommodation in accommodations %}
 <div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for accommodation in accommodations %}
   <div class="col">
     <div class="card h-100">
       <img
@@ -12,7 +12,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ accommodation.name }}</h5>
         <p class="card-text">
-        € {{ accommodation.price }} - {{ accommodation.city }}
+        € {{ accommodation.price_per_night }}/night - {{ accommodation.city }}
         </p>
         <div class="d-flex justify-content-between">
           <a
@@ -29,9 +29,8 @@
       </div>
     </div>
   </div>
-</div>
   {% empty %}
- <div class="text-center"><h1>No accommodations available.</h1></div> 
+  <div class="text-center"><h1>No accommodations available.</h1></div>
   {% endfor %}
-
+</div>
 {% endblock %}

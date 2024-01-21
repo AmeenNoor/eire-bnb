@@ -1,11 +1,4 @@
 
-
-* Run pip show django-allauth in your terminal. Your output should look like the image below.
-The Location value is the information we are interested in.
-We need to replace the file path shown in the video ../.pip-modules/lib/python3.7/site-packages with the new file path provided by running the previous command.
-The result should looking like the example below, and running it should successfully copy the AllAuth templates.
-Example: cp -r /workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/allauth/templates/* ./templates/allauth/ (edited)
-Remember => DISABLE_COLLECTSTATIC (HEROKU)
 # EireBnb
 
 ## Author

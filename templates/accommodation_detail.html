@@ -12,11 +12,10 @@
   <!-- Accommodation Details -->
   <div class="details">
     <h2>{{ accommodation.name }}</h2>
-    <p><strong>Price:</strong> € {{ accommodation.price }}</p>
+    <p><strong>Price:</strong> € {{ accommodation.price_per_night }}/night</p>
     <p><strong>Capacity:</strong> {{ accommodation.capacity }}</p>
     <p>
-      <strong>Address:</strong> {{ accommodation.address }}, {{
-      accommodation.city }}, {{ accommodation.country }}
+      <strong>Address:</strong> {{ accommodation.address }}, {{ accommodation.city }}, {{ accommodation.country }}
     </p>
     <p><strong>Description:</strong> {{ accommodation.description }}</p>
   </div>
