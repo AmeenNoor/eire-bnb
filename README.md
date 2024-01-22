@@ -10,9 +10,9 @@ EireBnb, where you can find awesome places to stay in Ireland. Our website is ta
 With EireBnb, users can easily browse through a variety of accommodations, each offering its own unique charm and amenities. Our website is designed to provide detailed information about each accommodation, helping you make an informed decision. Whether you're a solo traveler, a couple on a romantic getaway, or a family seeking adventure, EireBnb is your trusted companion in discovering and reserving accommodations that suit your needs.
 
 
-![Am I Responsive](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/responsive/am-i-responsive.png)
+![Am I Responsive](https://github.com/AmeenNoor/eire-bnb/blob/main/media/responsive/am-i-responsive.png)
 
-Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit the website.
+Click [here](https://eire-bnb-01c201f35540.herokuapp.com/) to visit the website.
 
 ## Table of Contents
 
@@ -126,11 +126,6 @@ EireBnb is for everyone who loves exploring Ireland! Families, couples, solo tra
 - #### Typography
   The 'Rye' font was chosen for the logo part to give a nice appearance and clear visual. 'Nanum Myeongjo' was selected for its readability, ensuring clear body text.
   
-  <div align="center">
-    <img src="https://github.com/AmeenNoor/activeLife-center/assets/19653847/70e02090-847e-4d60-bbdc-653e96d1efda" alt="rye-font">
-    <img src="https://github.com/AmeenNoor/activeLife-center/assets/19653847/b744b425-ff2e-4824-97ab-2f60627eafcc" alt="nanum-myeongjo-font">
-  </div>
-
 
 ### Wireframes
 - #### Desktop
@@ -218,22 +213,34 @@ The Booking model represents reservations made by users for specific accommodati
 ### Implemented Features
 
 1. Responsive Design: The website is designed to be responsive, adapting to different screen sizes and providing an optimal viewing experience on various devices, from desktops to mobile devices.
+   
 2. Navigation: The header includes navigation links for easy access to different sections of the website. The navigation is designed to be user-friendly and visually appealing.
+   
 3. Accommodation Listings: The main content area displays a list of accommodations, each represented as a card. Accommodations include an image, name, price, and city for quick reference. Users can click on "More Details" to view additional information about each accommodation.
+
 4. Booking Functionality: Users have the option to book accommodations directly from the listing by clicking on the "Book" button. The website likely includes functionality to handle booking requests, capturing user details, and managing reservations.
-5. Accommodation Detail Page: There is a dedicated page for detailed information about a specific accommodation, including a larger image and additional details.
-The layout is designed to provide a comprehensive view of the accommodation details.
+
+5. Accommodation Detail Page: There is a dedicated page for detailed information about a specific accommodation, including a larger image and additional details. The layout is designed to provide a comprehensive view of the accommodation details.
+   
 6. Dropdown Navigation: The header includes a dropdown navigation feature, enhancing the user experience by organizing related links under a single dropdown button.
+
+7. 404 and 500 Error Pages: Custom 404 and 500 error pages have been implemented to gracefully handle situations where users encounter page-not-found or server errors.
 
 
 
 ### Future Features
 
-1. **High Score Tracking**: Implement a feature to ask the user for their name and record all game statistics in an Excel file, allowing players to view high scores and compete for the top spot.
+1. User Reviews and Ratings: Allow users to leave reviews and ratings for accommodations they have booked.
+   
+2. Advanced Search and Filtering: Allow users to filter accommodations based on specific criteria such as price range, amenities, and location.
 
-2. **Difficulty Levels**: Add the option for players to choose between different difficulty levels, such as easy and difficult.
 
-3. **Dynamic Word Generation**: Instead of using a constant list of words, connect to an API for word generation, to ensure every game is an exciting adventure.
+
+3. **High Score Tracking**: Implement a feature to ask the user for their name and record all game statistics in an Excel file, allowing players to view high scores and compete for the top spot.
+
+4. **Difficulty Levels**: Add the option for players to choose between different difficulty levels, such as easy and difficult.
+
+5. **Dynamic Word Generation**: Instead of using a constant list of words, connect to an API for word generation, to ensure every game is an exciting adventure.
 
 ## Data Model/ Classes
 ### Worldscape
@@ -338,8 +345,8 @@ The main program consists of different functions.
 7. [Google Fonts](https://fonts.google.com/):
    Google fonts were used to import 'nanum myeongjo' & 'Rye' fonts into the style.css file which are used on all pages throughout the project.
 
-8. [HTML Validator](https://validator.w3.org/):
-   The HTML code of the website was tested using the HTML Validator that provided by The World Wide Web Consortium (W3C).
+8. [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/):
+   Bootstrap was utilized for the styling and layout of the website.
 
 9. [Jigsaw](https://jigsaw.w3.org/css-validator/):
    The CSS code of the website was tested using Jigsaw that provided by The World Wide Web Consortium (W3C).
@@ -362,13 +369,12 @@ The main program consists of different functions.
 ## Testing
 ### Validation Testing
 
-- 1. **HTML:**
-- 2. **CSS:**
+- 1. **CSS:**
     Validation testing was performed using Jigsaw to ensure code quality. Here is the validation testing results:
     
     ![CSS Test](https://github.com/AmeenNoor/eire-bnb/blob/main/media/testing/validation_testing/css/css-test.png)  
     
-- 3. **Python**
+- 2. **Python**
     Validation testing was performed using CI's PEP8 tool to ensure code quality. Here are the validation testing results for each file:
 **accommodation app:**
 1. #### admin.py
@@ -500,22 +506,25 @@ To deploy the site on Heroku, follow these steps:
 ## Credits
 ### Code
 
-1. The GitHub repository was created using the "Code Institute template." You can find the template at: [Code Institute Template](https://github.com/Code-Institute-Org/p3-template).
+1. The GitHub repository was created using the "Code Institute template." You can find the template at: [Code Institute Template](https://github.com/Code-Institute-Org/ci-full-template).
 
-2. The logic for **clear_terminal()** function was adopted from [How to clear screen in python?](https://www.geeksforgeeks.org/clear-screen-python/).
+2. The carousel/slideshow code in use has been adapted by [W3Schools](https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_carousel2).
 
 ### Content
 
-1. **List of Countries:** obtained from [Worldometers](https://www.worldometers.info/).
-
-2. **List of Cities:** obtained from [World Maps](https://ontheworldmap.com/all/cities/).
-
-3. **List of Landmarks:** obtained from [Destguides](https://www.destguides.com/famous-landmarks).
+1. The content in the accommodation description has been adapted and rephrased from [daft](https://www.daft.ie/)
    
 ### Media
 
-3. The responsive image is generated using the [Am I Responsive](https://ui.dev/amiresponsive) tool.
+1. The responsive image is generated using the [Am I Responsive](https://ui.dev/amiresponsive) tool.
+   
+2. The color scheme image is sourced from [Coolors](https://coolors.co/).
 
+3. The social media icons are sourced from [FontAwesome](https://fontawesome.com/).
 
+4. The fonts 'Rye' and 'Nanum Myeongjo' are sourced from [Google Fonts](https://fonts.google.com/).
+   
+5. Accommodation images are sourced from [Unsplash](https://unsplash.com/)
+   
 ### Mentor
 Huge thanks to my mentor "Malia Havlicek" for her support and guidance.
